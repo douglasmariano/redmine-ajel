@@ -148,10 +148,10 @@ pt-BR:
         greater_than_start_date: "deve ser maior que a data inicial"
         not_same_project: "não pertence ao mesmo projeto"
         circular_dependency: "Esta relação geraria uma dependência circular"
-        cant_link_an_issue_with_a_descendant: "Uma tarefa não pode ser relacionada a uma de suas subtarefas"
-        earlier_than_minimum_start_date: "não pode ser anterior a %{date} por causa de tarefas anteriores"
+        cant_link_an_issue_with_a_descendant: "Uma orçamento não pode ser relacionada a uma de suas suborçamentos"
+        earlier_than_minimum_start_date: "não pode ser anterior a %{date} por causa de orçamentos anteriores"
         not_a_regexp: "não é uma expressão regular válida"
-        open_issue_with_closed_parent: "Uma tarefa aberta não pode ser associada à uma tarefa pai fechada"
+        open_issue_with_closed_parent: "Uma orçamento aberta não pode ser associada à uma orçamento pai fechada"
 
   actionview_instancetag_blank_option: Selecione
 
@@ -186,8 +186,8 @@ pt-BR:
   notice_email_sent: "Um e-mail foi enviado para %{value}"
   notice_email_error: "Ocorreu um erro ao enviar o e-mail (%{value})"
   notice_feeds_access_key_reseted: Sua chave Atom foi reconfigurada.
-  notice_failed_to_save_issues: "Problema ao salvar %{count} tarefa(s) de %{total} selecionadas: %{ids}."
-  notice_no_issue_selected: "Nenhuma tarefa selecionada! Por favor, marque as tarefas que você deseja editar."
+  notice_failed_to_save_issues: "Problema ao salvar %{count} orçamento(s) de %{total} selecionadas: %{ids}."
+  notice_no_issue_selected: "Nenhuma orçamento selecionada! Por favor, marque as orçamentos que você deseja editar."
   notice_account_pending: "Sua conta foi criada e está aguardando aprovação do administrador."
   notice_default_data_loaded: Configuração padrão carregada com sucesso.
 
@@ -195,9 +195,9 @@ pt-BR:
   error_scm_not_found: "A entrada e/ou a revisão não existe no repositório."
   error_scm_command_failed: "Ocorreu um erro ao tentar acessar o repositório: %{value}"
   error_scm_annotate: "Esta entrada não existe ou não pode ser anotada."
-  error_issue_not_found_in_project: 'A tarefa não foi encontrada ou não pertence a este projeto'
-  error_no_tracker_in_project: 'Não há um tipo de tarefa associado a este projeto. Favor verificar as configurações do projeto.'
-  error_no_default_issue_status: 'A situação padrão para tarefa não está definida. Favor verificar sua configuração (Vá em "Administração -> Situação da tarefa").'
+  error_issue_not_found_in_project: 'O orçamento não foi encontrada ou não pertence a este projeto'
+  error_no_tracker_in_project: 'Não há um tipo de orçamento associado a este projeto. Favor verificar as configurações do projeto.'
+  error_no_default_issue_status: 'A situação padrão para orçamento não está definida. Favor verificar sua configuração (Vá em "Administração -> Situação do orçamento").'
   error_ldap_bind_credentials: "Conta/Palavra-chave do LDAP não é válida"
 
   mail_subject_lost_password: "Sua senha do %{value}."
@@ -208,8 +208,8 @@ pt-BR:
   mail_body_account_information: Informações sobre sua conta
   mail_subject_account_activation_request: "%{value} - Requisição de ativação de conta"
   mail_body_account_activation_request: "Um novo usuário (%{value}) se registrou. A conta está aguardando sua aprovação:"
-  mail_subject_reminder: "%{count} tarefa(s) com data prevista para os próximos %{days} dias"
-  mail_body_reminder: "%{count} tarefa(s) para você com data prevista para os próximos %{days} dias:"
+  mail_subject_reminder: "%{count} orçamento(s) com data prevista para os próximos %{days} dias"
+  mail_body_reminder: "%{count} orçamento(s) para você com data prevista para os próximos %{days} dias:"
 
 
   field_name: Nome
@@ -235,10 +235,10 @@ pt-BR:
   field_category: Categoria
   field_title: Título
   field_project: Projeto
-  field_issue: Tarefa
+  field_issue: Orçamento
   field_status: Situação
   field_notes: Notas
-  field_is_closed: Tarefa fechada
+  field_is_closed: Orçamento fechado
   field_is_default: Situação padrão
   field_tracker: Tipo
   field_subject: Título
@@ -285,9 +285,9 @@ pt-BR:
   field_spent_on: Data
   field_identifier: Identificador
   field_is_filter: É um filtro
-  field_issue_to: Tarefa relacionada
+  field_issue_to: Orçamento relacionado
   field_delay: Atraso
-  field_assignable: Tarefas podem ser atribuídas a este papel
+  field_assignable: Orçamentos podem ser atribuídas a este papel
   field_redirect_existing_links: Redirecionar links existentes
   field_estimated_hours: Tempo estimado
   field_column_names: Colunas
@@ -304,7 +304,7 @@ pt-BR:
   setting_login_required: Exigir autenticação
   setting_self_registration: Permitido Auto-registro
   setting_attachment_max_size: Tamanho máximo do anexo
-  setting_issues_export_limit: Limite de exportação das tarefas
+  setting_issues_export_limit: Limite de exportação dos orçamentos
   setting_mail_from: E-mail enviado de
   setting_bcc_recipients: Enviar com cópia oculta (cco)
   setting_host_name: Nome do Servidor e subdomínio
@@ -319,20 +319,20 @@ pt-BR:
   setting_autologin: Auto-login
   setting_date_format: Formato da data
   setting_time_format: Formato de hora
-  setting_cross_project_issue_relations: Permitir relacionar tarefas entre projetos
-  setting_issue_list_default_columns: Colunas na lista de tarefas por padrão
+  setting_cross_project_issue_relations: Permitir relacionar orçamentos entre projetos
+  setting_issue_list_default_columns: Colunas na lista de orçamentos por padrão
   setting_emails_footer: Rodapé do e-mail
   setting_protocol: Protocolo
   setting_per_page_options: Número de itens exibidos por página
   setting_user_format: Formato de exibição de nome de usuário
   setting_activity_days_default: Dias visualizados na atividade do projeto
-  setting_display_subprojects_issues: Visualizar tarefas dos subprojetos nos projetos principais por padrão
+  setting_display_subprojects_issues: Visualizar orçamentos dos subprojetos nos projetos principais por padrão
   setting_enabled_scm: SCM habilitados
   setting_mail_handler_api_enabled: Habilitar WS para e-mails de entrada
   setting_mail_handler_api_key: Chave de API
   setting_sequential_project_identifiers: Gerar identificadores sequenciais de projeto
 
-  project_module_issue_tracking: Gerenciamento de Tarefas
+  project_module_issue_tracking: Gerenciamento de Orçamentos
   project_module_time_tracking: Gerenciamento de tempo
   project_module_news: Notícias
   project_module_documents: Documentos
@@ -353,13 +353,13 @@ pt-BR:
     other: "%{count} projetos"
   label_project_all: Todos os projetos
   label_project_latest: Últimos projetos
-  label_issue: Tarefa
-  label_issue_new: Nova tarefa
-  label_issue_plural: Tarefas
-  label_issue_view_all: Ver todas as tarefas
-  label_issues_by: "Tarefas por %{value}"
-  label_issue_added: Tarefa adicionada
-  label_issue_updated: Tarefa atualizada
+  label_issue: Orçamento
+  label_issue_new: Novo orçamento
+  label_issue_plural: Orçamentos
+  label_issue_view_all: Ver todas os orçamentos
+  label_issues_by: "Orçamentos por %{value}"
+  label_issue_added: Orçamento adicionado
+  label_issue_updated: Orçamento atualizado
   label_issue_note_added: Nota adicionada
   label_issue_status_updated: Situação atualizada
   label_issue_priority_updated: Prioridade atualizada
@@ -374,15 +374,15 @@ pt-BR:
   label_member: Membro
   label_member_new: Novo membro
   label_member_plural: Membros
-  label_tracker: Tipo de tarefa
-  label_tracker_plural: Tipos de tarefas
+  label_tracker: Tipo de orçamento
+  label_tracker_plural: Tipos de orçamentos
   label_tracker_new: Novo tipo
   label_workflow: Fluxo de trabalho
-  label_issue_status: Situação da tarefa
-  label_issue_status_plural: Situação das tarefas
+  label_issue_status: Situação do orçamento
+  label_issue_status_plural: Situação dos orçamentos
   label_issue_status_new: Nova situação
-  label_issue_category: Categoria da tarefa
-  label_issue_category_plural: Categorias das tarefas
+  label_issue_category: Categoria do orçamento
+  label_issue_category_plural: Categorias dos orçamentos
   label_issue_category_new: Nova categoria
   label_custom_field: Campo personalizado
   label_custom_field_plural: Campos personalizados
@@ -402,8 +402,8 @@ pt-BR:
   label_login: Entrar
   label_logout: Sair
   label_help: Ajuda
-  label_reported_issues: Tarefas reportadas
-  label_assigned_to_me_issues: Minhas tarefas
+  label_reported_issues: Orçamentos reportados
+  label_assigned_to_me_issues: Meus Orçamentos
   label_last_login: Última conexão
   label_registered_on: Registrado em
   label_activity: Atividade
@@ -537,7 +537,7 @@ pt-BR:
   label_roadmap: Planejamento
   label_roadmap_due_in: "Previsto para %{value}"
   label_roadmap_overdue: "%{value} atrasado"
-  label_roadmap_no_issues: Sem tarefas para esta versão
+  label_roadmap_no_issues: Sem orçamentos para esta versão
   label_search: Busca
   label_result_plural: Resultados
   label_all_words: Todas as palavras
@@ -552,7 +552,7 @@ pt-BR:
   label_preview: Pré-visualizar
   label_feed_plural: Feeds
   label_changes_details: Detalhes de todas as alterações
-  label_issue_tracking: Tarefas
+  label_issue_tracking: Orçamentos
   label_spent_time: Tempo gasto
   label_f_hour: "%{value} hora"
   label_f_hour_plural: "%{value} horas"
@@ -567,8 +567,8 @@ pt-BR:
   label_options: Opções
   label_copy_workflow_from: Copiar fluxo de trabalho de
   label_permissions_report: Relatório de permissões
-  label_watched_issues: Tarefas observadas
-  label_related_issues: Tarefas relacionadas
+  label_watched_issues: Orçamentos observados
+  label_related_issues: Orçamentos relacionados
   label_applied_status: Situação alterada
   label_loading: Carregando...
   label_relation_new: Nova relação
@@ -611,7 +611,7 @@ pt-BR:
   label_changeset_plural: Conjunto de alterações
   label_default_columns: Colunas padrão
   label_no_change_option: (Sem alteração)
-  label_bulk_edit_selected_issues: Edição em massa das tarefas selecionadas.
+  label_bulk_edit_selected_issues: Edição em massa dos orçamentos selecionadas.
   label_theme: Tema
   label_default: Padrão
   label_search_titles_only: Pesquisar somente títulos
@@ -686,37 +686,37 @@ pt-BR:
   text_min_max_length_info: 0 = sem restrição
   text_project_destroy_confirmation: Você tem certeza que deseja excluir este projeto e todos os dados relacionados?
   text_subprojects_destroy_warning: "Seu(s) subprojeto(s): %{value} também serão excluídos."
-  text_workflow_edit: Selecione um papel e um tipo de tarefa para editar o fluxo de trabalho
+  text_workflow_edit: Selecione um papel e um tipo de orçamento para editar o fluxo de trabalho
   text_are_you_sure: Você tem certeza?
-  text_tip_issue_begin_day: tarefa inicia neste dia
-  text_tip_issue_end_day: tarefa termina neste dia
-  text_tip_issue_begin_end_day: tarefa inicia e termina neste dia
+  text_tip_issue_begin_day: orçamento inicia neste dia
+  text_tip_issue_end_day: orçamento termina neste dia
+  text_tip_issue_begin_end_day: orçamento inicia e termina neste dia
   text_caracters_maximum: "máximo %{count} caracteres"
   text_caracters_minimum: "deve ter ao menos %{count} caracteres."
   text_length_between: "deve ter entre %{min} e %{max} caracteres."
   text_tracker_no_workflow: Sem fluxo de trabalho definido para este tipo.
   text_unallowed_characters: Caracteres não permitidos
   text_comma_separated: Múltiplos valores são permitidos (separados por vírgula).
-  text_issues_ref_in_commit_messages: Referenciando tarefas nas mensagens de commit
-  text_issue_added: "Tarefa %{id} incluída (por %{author})."
-  text_issue_updated: "Tarefa %{id} alterada (por %{author})."
+  text_issues_ref_in_commit_messages: Referenciando orçamentos nas mensagens de commit
+  text_issue_added: "Orçamento %{id} incluído (por %{author})."
+  text_issue_updated: "Orçamento %{id} alterado (por %{author})."
   text_wiki_destroy_confirmation: Você tem certeza que deseja excluir este wiki e TODO o seu conteúdo?
-  text_issue_category_destroy_question: "Algumas tarefas (%{count}) estão atribuídas a esta categoria. O que você deseja fazer?"
+  text_issue_category_destroy_question: "Alguns orçamentos (%{count}) estão atribuídas a esta categoria. O que você deseja fazer?"
   text_issue_category_destroy_assignments: Remover atribuições da categoria
-  text_issue_category_reassign_to: Redefinir tarefas para esta categoria
-  text_user_mail_option: "Para projetos (não selecionados), você somente receberá notificações sobre o que você está observando ou está envolvido (ex. tarefas das quais você é o autor ou que estão atribuídas a você)"
-  text_no_configuration_data: "Os Papéis, tipos de tarefas, situação de tarefas e fluxos de trabalho não foram configurados ainda.\nÉ altamente recomendado carregar as configurações padrão. Você poderá modificar estas configurações assim que carregadas."
+  text_issue_category_reassign_to: Redefinir orçamentos para esta categoria
+  text_user_mail_option: "Para projetos (não selecionados), você somente receberá notificações sobre o que você está observando ou está envolvido (ex. orçamentos das quais você é o autor ou que estão atribuídas a você)"
+  text_no_configuration_data: "Os Papéis, tipos de orçamentos, situação de orçamentos e fluxos de trabalho não foram configurados ainda.\nÉ altamente recomendado carregar as configurações padrão. Você poderá modificar estas configurações assim que carregadas."
   text_load_default_configuration: Carregar a configuração padrão
   text_status_changed_by_changeset: "Aplicado no conjunto de alterações %{value}."
-  text_issues_destroy_confirmation: 'Você tem certeza que deseja excluir a(s) tarefa(s) selecionada(s)?'
+  text_issues_destroy_confirmation: 'Você tem certeza que deseja excluir a(s) orçamento(s) selecionada(s)?'
   text_select_project_modules: 'Selecione módulos para habilitar para este projeto:'
   text_default_administrator_account_changed: Conta padrão do administrador alterada
   text_file_repository_writable: Repositório com permissão de escrita
   text_rmagick_available: RMagick disponível (opcional)
-  text_destroy_time_entries_question: "%{hours} horas de trabalho foram registradas nas tarefas que você está excluindo. O que você deseja fazer?"
+  text_destroy_time_entries_question: "%{hours} horas de trabalho foram registrados nos orçamentos que você está excluindo. O que você deseja fazer?"
   text_destroy_time_entries: Excluir horas de trabalho
   text_assign_time_entries_to_project: Atribuir estas horas de trabalho para outro projeto
-  text_reassign_time_entries: 'Atribuir horas reportadas para esta tarefa:'
+  text_reassign_time_entries: 'Atribuir horas reportadas para esta orçamento:'
   text_user_wrote: "%{value} escreveu:"
   text_enumeration_destroy_question: "%{count} objetos estão atribuídos a este valor."
   text_enumeration_category_reassign_to: 'Reatribuí-los ao valor:'
@@ -744,7 +744,7 @@ pt-BR:
   default_activity_design: Design
   default_activity_development: Desenvolvimento
 
-  enumeration_issue_priorities: Prioridade das tarefas
+  enumeration_issue_priorities: Prioridade dos orçamentos
   enumeration_doc_categories: Categorias de documento
   enumeration_activities: Atividades (registro de horas)
   notice_unable_delete_version: Não foi possível excluir a versão
@@ -752,16 +752,16 @@ pt-BR:
   label_copied: copiado
   setting_plain_text_mail: Usar mensagem sem formatação HTML
   permission_view_files: Ver arquivos
-  permission_edit_issues: Editar tarefas
+  permission_edit_issues: Editar orçamentos
   permission_edit_own_time_entries: Editar o próprio tempo de trabalho
   permission_manage_public_queries: Gerenciar consultas públicas
-  permission_add_issues: Adicionar tarefas
+  permission_add_issues: Adicionar orçamentos
   permission_log_time: Adicionar tempo gasto
   permission_view_changesets: Ver conjunto de alterações
   permission_view_time_entries: Ver tempo gasto
   permission_manage_versions: Gerenciar versões
   permission_manage_wiki: Gerenciar wiki
-  permission_manage_categories: Gerenciar categorias de tarefas
+  permission_manage_categories: Gerenciar categorias de orçamentos
   permission_protect_wiki_pages: Proteger páginas wiki
   permission_comment_news: Comentar notícias
   permission_delete_messages: Excluir mensagens
@@ -769,8 +769,8 @@ pt-BR:
   permission_edit_wiki_pages: Editar páginas wiki
   permission_add_issue_watchers: Adicionar observadores
   permission_view_gantt: Ver gráfico gantt
-  permission_move_issues: Mover tarefas
-  permission_manage_issue_relations: Gerenciar relacionamentos de tarefas
+  permission_move_issues: Mover orçamentos
+  permission_manage_issue_relations: Gerenciar relacionamentos de orçamentos
   permission_delete_wiki_pages: Excluir páginas wiki
   permission_manage_boards: Gerenciar fóruns
   permission_delete_wiki_pages_attachments: Excluir anexos
@@ -783,7 +783,7 @@ pt-BR:
   permission_view_calendar: Ver calendário
   permission_manage_members: Gerenciar membros
   permission_edit_messages: Editar mensagens
-  permission_delete_issues: Excluir tarefas
+  permission_delete_issues: Excluir orçamentos
   permission_view_issue_watchers: Ver lista de observadores
   permission_manage_repository: Gerenciar repositório
   permission_commit_access: Acesso do commit
@@ -855,7 +855,7 @@ pt-BR:
   version_status_closed: fechado
   version_status_locked: bloqueado
   version_status_open: aberto
-  error_can_not_reopen_issue_on_closed_version: Uma tarefa atribuída a uma versão fechada não pode ser reaberta
+  error_can_not_reopen_issue_on_closed_version: Um orçamento atribuída a uma versão fechada não pode ser reaberta
   label_user_anonymous: Anônimo
   button_move_and_follow: Mover e seguir
   setting_default_projects_modules: Módulos habilitados por padrão para novos projetos
@@ -870,20 +870,20 @@ pt-BR:
   button_duplicate: Duplicar
   button_copy_and_follow: Copiar e seguir
   label_copy_source: Origem
-  setting_issue_done_ratio: Calcular o percentual de conclusão da tarefa
-  setting_issue_done_ratio_issue_status: Usar a situação da tarefa
-  error_issue_done_ratios_not_updated: O percentual de conclusão das tarefas não foi atualizado.
-  error_workflow_copy_target: Por favor, selecione os tipos de tarefa e os papéis alvo
-  setting_issue_done_ratio_issue_field: Use o campo da tarefa
+  setting_issue_done_ratio: Calcular o percentual de conclusão do orçamento
+  setting_issue_done_ratio_issue_status: Usar a situação do orçamento
+  error_issue_done_ratios_not_updated: O percentual de conclusão dos orçamentos não foi atualizado.
+  error_workflow_copy_target: Por favor, selecione os tipos de orçamento e os papéis alvo
+  setting_issue_done_ratio_issue_field: Use o campo do orçamento
   label_copy_same_as_target: Mesmo alvo
   label_copy_target: Alvo
   notice_issue_done_ratios_updated: Percentual de conclusão atualizados.
-  error_workflow_copy_source: Por favor, selecione um tipo de tarefa e papel de origem
-  label_update_issue_done_ratios: Atualizar percentual de conclusão das tarefas
+  error_workflow_copy_source: Por favor, selecione um tipo de orçamento e papel de origem
+  label_update_issue_done_ratios: Atualizar percentual de conclusão dos orçamentos
   setting_start_of_week: Início da semana
   field_watcher: Observador
-  permission_view_issues: Ver tarefas
-  label_display_used_statuses_only: Somente exibir situações que são usadas por este tipo de tarefa
+  permission_view_issues: Ver orçamentos
+  label_display_used_statuses_only: Somente exibir situações que são usadas por este tipo de orçamento
   label_revision_id: Revisão %{value}
   label_api_access_key: Chave de acesso à API
   button_show: Exibir
@@ -906,16 +906,16 @@ pt-BR:
   permission_export_wiki_pages: Exportar páginas wiki
   setting_cache_formatted_text: Realizar cache de texto formatado
   permission_manage_project_activities: Gerenciar atividades do projeto
-  error_unable_delete_issue_status: Não foi possível excluir situação da tarefa
+  error_unable_delete_issue_status: Não foi possível excluir situação do orçamento
   label_profile: Perfil
-  permission_manage_subtasks: Gerenciar subtarefas
-  field_parent_issue: Tarefa pai
-  label_subtask_plural: Subtarefas
+  permission_manage_subtasks: Gerenciar suborçamentos
+  field_parent_issue: Orçamento pai
+  label_subtask_plural: Suborçamentos
   label_project_copy_notifications: Enviar notificações por e-mail ao copiar projeto
   error_can_not_delete_custom_field: Não foi possível excluir o campo personalizado
   error_unable_to_connect: Não foi possível conectar (%{value})
   error_can_not_remove_role: Este papel está em uso e não pode ser excluído.
-  error_can_not_delete_tracker: Este tipo de tarefa está atribuído a alguma(s) tarefa(s) e não pode ser excluído.
+  error_can_not_delete_tracker: Este tipo de orçamento está atribuído a alguma(s) orçamento(s) e não pode ser excluído.
   field_principal: Principal
   notice_failed_to_save_members: "Falha ao salvar membro(s): %{errors}."
   text_zoom_out: Afastar zoom
@@ -928,7 +928,7 @@ pt-BR:
   button_edit_associated_wikipage: "Editar página wiki relacionada: %{page_title}"
   field_text: Campo de texto
   setting_default_notification_option: Opção padrão de notificação
-  label_user_mail_option_only_my_events: Somente de tarefas que observo ou que esteja envolvido
+  label_user_mail_option_only_my_events: Somente de orçamentos que observo ou que esteja envolvido
   label_user_mail_option_none: Sem eventos
   field_member_of_group: Responsável pelo grupo
   field_assigned_to_role: Papel do responsável
@@ -949,21 +949,21 @@ pt-BR:
   label_news_comment_added: Notícia recebeu um comentário
   button_expand_all: Expandir tudo
   button_collapse_all: Recolher tudo
-  label_additional_workflow_transitions_for_assignee: Transições adicionais permitidas quando o usuário é o responsável pela tarefa
+  label_additional_workflow_transitions_for_assignee: Transições adicionais permitidas quando o usuário é o responsável pela orçamento
   label_additional_workflow_transitions_for_author: Transições adicionais permitidas quando o usuário é o autor
 
   label_bulk_edit_selected_time_entries: Alteração em massa do registro de horas
   text_time_entries_destroy_confirmation: Tem certeza que quer excluir o(s) registro(s) de horas selecionado(s)?
   label_role_anonymous: Anônimo
   label_role_non_member: Não Membro
-  label_issues_visibility_own: Tarefas criadas ou atribuídas ao usuário
-  field_issues_visibility: Visibilidade das tarefas
-  label_issues_visibility_all: Todas as tarefas
-  permission_set_own_issues_private: Alterar as próprias tarefas para públicas ou privadas
+  label_issues_visibility_own: Orçamentos criadas ou atribuídas ao usuário
+  field_issues_visibility: Visibilidade dos orçamentos
+  label_issues_visibility_all: Todos os orçamentos
+  permission_set_own_issues_private: Alterar os próprias orçamentos para públicas ou privadas
   field_is_private: Privado
-  permission_set_issues_private: Alterar tarefas para públicas ou privadas
-  label_issues_visibility_public: Todas as tarefas não privadas
-  text_issues_destroy_descendants_confirmation: Isto também irá excluir %{count} subtarefa(s).
+  permission_set_issues_private: Alterar orçamentos para públicas ou privadas
+  label_issues_visibility_public: Todos os orçamentos não privadas
+  text_issues_destroy_descendants_confirmation: Isto também irá excluir %{count} suborçamento(s).
   field_commit_logs_encoding: Codificação das mensagens de commit
   field_scm_path_encoding: Codificação do caminho
   text_scm_path_encoding_note: "Padrão: UTF-8"
@@ -977,9 +977,9 @@ pt-BR:
   label_git_report_last_commit: Relatar última alteração para arquivos e diretórios
   text_scm_config: Você pode configurar seus comandos de versionamento em config/configurations.yml. Por favor reinicie a aplicação após alterá-lo.
   text_scm_command_not_available: Comando de versionamento não disponível. Por favor verifique as configurações no painel de administração.
-  notice_issue_successful_create: Tarefa %{id} criada.
+  notice_issue_successful_create: Orçamento %{id} criado.
   label_between: entre
-  setting_issue_group_assignment: Permitir atribuições de tarefas a grupos
+  setting_issue_group_assignment: Permitir atribuições de orçamentos a grupos
   label_diff: diff
   text_git_repository_note: "Repositório esta vazio e é local (ex: /gitrepo, c:\\gitrepo)"
 
@@ -989,7 +989,7 @@ pt-BR:
   description_user_mail_notification: Configuração de notificações por e-mail
   description_message_content: Conteúdo da mensagem
   description_available_columns: Colunas disponíveis
-  description_issue_category_reassign: Escolha uma categoria de tarefas
+  description_issue_category_reassign: Escolha uma categoria de orçamentos
   description_search: Campo de busca
   description_notes: Notas
   description_choose_project: Projetos
@@ -1000,7 +1000,7 @@ pt-BR:
   label_parent_revision: Pai
   label_child_revision: Filho
   error_scm_annotate_big_text_file: A entrada não pode ser anotada, pois excede o tamanho máximo do arquivo de texto.
-  setting_default_issue_start_date_to_creation_date: Usar data corrente como data inicial para novas tarefas
+  setting_default_issue_start_date_to_creation_date: Usar data corrente como data inicial para novos orçamentos
   button_edit_section: Editar esta seção
   setting_repositories_encodings: Codificação dos repositórios e anexos
   description_all_columns: Todas as colunas
@@ -1009,9 +1009,9 @@ pt-BR:
   error_attachment_too_big: Este arquivo não pode ser enviado porque excede o tamanho máximo permitido (%{max_size})
   notice_failed_to_save_time_entries: "Falha ao salvar %{count} de %{total} horas trabalhadas: %{ids}."
   label_x_issues:
-    zero:  0 tarefa
-    one:   1 tarefa
-    other: "%{count} tarefas"
+    zero:  0 orçamento
+    one:   1 orçamento
+    other: "%{count} orçamentos"
   label_repository_new: Novo repositório
   field_repository_is_default: Repositório principal
   label_copy_attachments: Copiar anexos
@@ -1019,12 +1019,12 @@ pt-BR:
   label_completed_versions: Versões concluídas
   text_project_identifier_info: Somente letras minúsculas (a-z), números, traços e sublinhados são permitidos. <br /> Uma vez salvo, o identificador não pode ser alterado.
   field_multiple: Múltiplos valores
-  setting_commit_cross_project_ref: Permitir que tarefas de todos os outros projetos sejam refenciadas e resolvidas
+  setting_commit_cross_project_ref: Permitir que orçamentos de todos os outros projetos sejam refenciadas e resolvidas
   text_issue_conflict_resolution_add_notes: Adicionar minhas anotações e descartar minhas outras mudanças
   text_issue_conflict_resolution_overwrite: Aplicar as minhas alterações de qualquer maneira (notas anteriores serão mantidas, mas algumas mudanças podem ser substituídas)
-  notice_issue_update_conflict: A tarefa foi atualizada por um outro usuário, enquanto você estava editando.
+  notice_issue_update_conflict: O orçamento foi atualizada por um outro usuário, enquanto você estava editando.
   text_issue_conflict_resolution_cancel: Descartar todas as minhas mudanças e reexibir %{link}
-  permission_manage_related_issues: Gerenciar tarefas relacionadas
+  permission_manage_related_issues: Gerenciar orçamentos relacionadas
   field_auth_source_ldap_filter: Filtro LDAP
   label_search_for_watchers: Procurar por outros observadores para adicionar
   notice_account_deleted: Sua conta foi excluída permanentemente.
@@ -1061,18 +1061,18 @@ pt-BR:
   label_attribute_of_author: "autor %{name}"
   label_attribute_of_assigned_to: "atribuído a %{name}"
   label_attribute_of_fixed_version: "versão %{name}"
-  label_copy_subtasks: Copiar subtarefas
+  label_copy_subtasks: Copiar suborçamentos
   label_copied_to: copiada
   label_copied_from: copiado
-  label_any_issues_in_project: qualquer tarefa do projeto
-  label_any_issues_not_in_project: qualquer tarefa que não está no projeto
+  label_any_issues_in_project: qualquer orçamento do projeto
+  label_any_issues_not_in_project: qualquer orçamento que não está no projeto
   field_private_notes: notas privadas
   permission_view_private_notes: Ver notas privadas
   permission_set_notes_private: Permitir alterar notas para privada
-  label_no_issues_in_project: sem tarefas no projeto
+  label_no_issues_in_project: sem orçamentos no projeto
   label_any: todos
   label_last_n_weeks: "últimas %{count} semanas"
-  setting_cross_project_subtasks: Permitir subtarefas entre projetos
+  setting_cross_project_subtasks: Permitir suborçamentos entre projetos
   label_cross_project_descendants: com subprojetos
   label_cross_project_tree: Com a árvore do Projeto
   label_cross_project_hierarchy: Com uma hierarquia do Projeto
@@ -1083,7 +1083,7 @@ pt-BR:
   label_in_the_past_days: nos dias anteriores
   label_attribute_of_user: Usuário %{name}
   text_turning_multiple_off: Se você desativar vários valores, eles serão removidos, a fim de preservar somente um valor por item.
-  label_attribute_of_issue: Tarefa %{name}
+  label_attribute_of_issue: Orçamento %{name}
   permission_add_documents: Adicionar documentos
   permission_edit_documents: Editar documentos
   permission_delete_documents: Excluir documentos
@@ -1130,13 +1130,13 @@ pt-BR:
   label_users_visibility_all: Todos usuários ativos
   label_users_visibility_members_of_visible_projects: Membros de projetos visíveis
   label_edit_attachments: Editar arquivos anexados
-  setting_link_copied_issue: Relacionar tarefas copiadas
-  label_link_copied_issue: Relacionar tarefas copiadas
+  setting_link_copied_issue: Relacionar orçamentos copiadas
+  label_link_copied_issue: Relacionar orçamentos copiadas
   label_ask: Perguntar
   label_search_attachments_yes: Procurar nome do arquivo e descrição anexados
   label_search_attachments_no: Não procurar anexados
   label_search_attachments_only: Procurar somente anexados
-  label_search_open_issues_only: Somente tarefas abertas
+  label_search_open_issues_only: Somente orçamentos abertas
   field_address: E-mail
   setting_max_additional_emails: Número máximo de e-mails adicionais
   label_email_address_plural: Emails
@@ -1145,13 +1145,13 @@ pt-BR:
   label_disable_notifications: Desabilitar notificações
   setting_search_results_per_page: Resultados de pesquisa por página
   label_blank_value: Branco
-  permission_copy_issues: Copiar tarefas
+  permission_copy_issues: Copiar orçamentos
   error_password_expired: Sua senha expirou ou requer atualização
   field_time_entries_visibility: Visibilidade do log de tempo
   setting_password_max_age: Requer troca de senha depois
-  label_parent_task_attributes: Atributos das tarefas pai
-  label_parent_task_attributes_derived: Calculado das subtarefas
-  label_parent_task_attributes_independent: Independente das subtarefas
+  label_parent_task_attributes: Atributos dos orçamentos pai
+  label_parent_task_attributes_derived: Calculado das suborçamentos
+  label_parent_task_attributes_independent: Independente das suborçamentos
   label_time_entries_visibility_all: Todas as entradas de tempo
   label_time_entries_visibility_own: Entradas de tempo criadas pelo usuário
   label_member_management: Gerenciamento de membros
@@ -1165,8 +1165,8 @@ pt-BR:
   error_invalid_csv_file_or_settings: O arquivo não é um arquivo CSV ou não corresponde às
     definições abaixo
   error_can_not_read_import_file: Ocorreu um erro ao ler o arquivo para importação
-  permission_import_issues: Importar tarefas
-  label_import_issues: Importar tarefas
+  permission_import_issues: Importar orçamentos
+  label_import_issues: Importar orçamentos
   label_select_file_to_import: Selecione o arquivo para importação
   label_fields_separator: Campo separador
   label_fields_wrapper: Field empacotador
@@ -1182,15 +1182,15 @@ pt-BR:
   field_total_estimated_hours: Tempo estimado geral
   label_api: API
   label_total_plural: Totais
-  label_assigned_issues: Tarefas atribuídas
+  label_assigned_issues: Orçamentos atribuídos
   label_field_format_enumeration: Chave/Lista de valores
   label_f_hour_short: '%{value} h'
   field_default_version: Versão padrão
   error_attachment_extension_not_allowed: Extensão anexada %{extension} não é permitida
   setting_attachment_extensions_allowed: Permitir extensões
   setting_attachment_extensions_denied: Negar extensões
-  label_any_open_issues: Quaisquer tarefas abertas
-  label_no_open_issues: Sem tarefas abertas
+  label_any_open_issues: Quaisquer orçamentos abertas
+  label_no_open_issues: Sem orçamentos abertas
   label_default_values_for_new_users: Valores padrões para novos usuários
   setting_sys_api_key: Chave de API
   setting_lost_password: Perdi minha senha
@@ -1210,13 +1210,13 @@ pt-BR:
   button_filter: Filtro
   mail_body_password_updated: Sua senha foi alterada.
   label_no_preview: Não há visualização disponível
-  error_no_tracker_allowed_for_new_issue_in_project: O projeto não tem nenhum tipo de tarefa
+  error_no_tracker_allowed_for_new_issue_in_project: O projeto não tem nenhum tipo de orçamento
     para o qual você pode criar um chamado
-  label_tracker_all: Todos os tipos de tarefa
-  label_new_project_issue_tab_enabled: Exibir "Nova tarefa" em aba
+  label_tracker_all: Todos os tipos de orçamento
+  label_new_project_issue_tab_enabled: Exibir "Novo orçamento" em aba
   setting_new_item_menu_tab: Aba menu do projeto para criação de novos objetos
   label_new_object_tab_enabled: Exibir o "+" suspenso
-  error_no_projects_with_tracker_allowed_for_new_issue: Não há projetos com tipos de tarefa para os quais você pode criar uma tarefa
+  error_no_projects_with_tracker_allowed_for_new_issue: Não há projetos com tipos de orçamento para os quais você pode criar um orçamento
   field_textarea_font: Fonte usada para áreas de texto
   label_font_default: Fonte padrão
   label_font_monospace: Fonte monoespaçada
@@ -1225,12 +1225,12 @@ pt-BR:
   label_table_of_contents: Índice
   setting_commit_logs_formatting: Aplicar formatação de texto às mensagens de commit
   setting_mail_handler_enable_regex_delimiters: Ativar a utilização de expressões regulares
-  error_move_of_child_not_possible: 'A subtarefa %{child} não pode ser movida para o novo projeto: %{errors}'
-  error_cannot_reassign_time_entries_to_an_issue_about_to_be_deleted: O tempo gasto não pode ser alterado numa tarefa que será apagada
+  error_move_of_child_not_possible: 'A suborçamento %{child} não pode ser movida para o novo projeto: %{errors}'
+  error_cannot_reassign_time_entries_to_an_issue_about_to_be_deleted: O tempo gasto não pode ser alterado num orçamento que será apagada
   setting_timelog_required_fields: Campos obrigatórios para registro de horas
   label_attribute_of_object: '%{object_name} %{name}'
-  label_user_mail_option_only_assigned: Somente de tarefas que observo ou que estão atribuídas a mim
-  label_user_mail_option_only_owner: Somente de tarefas que observo ou que foram criadas por mim
+  label_user_mail_option_only_assigned: Somente de orçamentos que observo ou que estão atribuídas a mim
+  label_user_mail_option_only_owner: Somente de orçamentos que observo ou que foram criadas por mim
   warning_fields_cleared_on_bulk_edit: As alterações vão apagar valores de um ou mais campos nos objetos selecionados
   field_updated_by: Atualizado por
   field_last_updated_by: Última atualização por
