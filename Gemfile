@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "bundler", ">= 1.5.0", "< 2.0.0"
+gem "bundler", ">= 1.17.3"
 
 gem "rails", "4.2.11.1"
 gem "addressable", "2.4.0" if RUBY_VERSION < "2.0"
@@ -17,6 +17,8 @@ gem "roadie-rails", "~> 1.1.1"
 gem "roadie", "~> 3.2.1"
 gem "mimemagic"
 gem "mail", "~> 2.6.4"
+gem 'puma'
+gem "chartkick"
 
 gem "nokogiri", (RUBY_VERSION >= "2.1" ? "~> 1.8.1" : "~> 1.6.8")
 gem "i18n", "~> 0.7.0"
@@ -44,7 +46,7 @@ end
 platforms :mri, :mingw, :x64_mingw do
   # Optional gem for exporting the gantt to a PNG file, not supported with jruby
   group :rmagick do
-    gem "rmagick", "~> 2.16.0"
+    /gem "rmagick", "~> 2.16.0"/
   end
 
   # Optional Markdown support, not for JRuby
@@ -67,7 +69,7 @@ if File.exist?(database_file)
       when 'mysql2'
         gem "mysql2", "~> 0.4.6", :platforms => [:mri, :mingw, :x64_mingw]
       when /postgresql/
-        gem "pg", "~> 0.18.1", :platforms => [:mri, :mingw, :x64_mingw]
+        gem 'pg', '~> 0.18', :platforms => [:mri, :mingw, :x64_mingw]
       when /sqlite3/
         gem "sqlite3", (RUBY_VERSION < "2.0" && RUBY_PLATFORM =~ /mingw/ ? "1.3.12" : "~>1.3.12"),
                        :platforms => [:mri, :mingw, :x64_mingw]
